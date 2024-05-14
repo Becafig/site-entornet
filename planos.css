@@ -285,7 +285,14 @@ header .slider-2 {
 
     .cards .row-1 {
     height: 400px;
-    }   
+    }
+
+    #tab-1:checked ~ .card-area .cards .row-1 {
+    margin-left: -0%;
+    width: 49%;
+    min-width: 300px;
+    max-width: 100%;
+    
 }
 
 
