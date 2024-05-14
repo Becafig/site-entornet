@@ -239,7 +239,7 @@ header .slider-2 {
 }
 
 /* Mídia Query para dispositivos móveis */
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 600px) {
     .wrapper {
         border-radius: 40px;
         padding: 20px;
@@ -256,18 +256,22 @@ header .slider-2 {
     .price-details .price::before {
         left: -20px;
         top: 10px;
-        font-size: 20px;
+        font-size: 12px;
     }
 
     .price-details .price::after {
         right: -25px;
         bottom: 10px;
-        font-size: 13px;
+        font-size: 10px;
     }
 
     .price-details p {
         font-size: 18px;
     }
+
+    .price-details .price {
+      font-size: 40px;
+      }
 
     .row .features li {
         font-size: 15px;
@@ -278,21 +282,18 @@ header .slider-2 {
         font-size: 18px;
         margin-top: 10%;
     }
-    
-    .cards .row {
-    height: 400px;
-    }
-
-    .cards .row-1 {
-    height: 400px;
-    }
 
     #tab-1:checked ~ .card-area .cards .row-1 {
-    margin-left: -0%;
-    width: 49%;
-    min-width: 300px;
-    max-width: 100%;
-    
+      margin-left: -0%;
+      width: 49%;
+      min-width: 280px;
+      max-width: 100%;
+  }
+  .centro {
+    font-size: 14px;
+    margin-bottom: 3%;
+  }
+
 }
 
 
