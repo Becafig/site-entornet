@@ -240,6 +240,11 @@ header .slider-2 {
 
 /* Mídia Query para dispositivos móveis */
 @media only screen and (max-width: 600px) {
+
+    header label {
+        font-size: 11px;
+    }
+    
     .wrapper {
         border-radius: 40px;
         padding: 20px;
