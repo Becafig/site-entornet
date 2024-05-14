@@ -276,6 +276,7 @@ header .slider-2 {
     .wrapper button {
         height: 40px;
         font-size: 18px;
+        margin-top: 10%;
     }
     
     .cards .row {
