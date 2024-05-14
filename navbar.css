@@ -1,8 +1,11 @@
-
-
+@font-face {
+  font-family: 'omicron.ttf'; /* Nome da sua fonte */
+  src: url('Omicron.ttf') format('woff2'), /* Caminho para sua fonte */
+       url('Omicron.ttf') format('woff'); /* Caminho para sua fonte */
+}
 
 a {
-  color: #fff;
+  color: #fff12f;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -11,10 +14,37 @@ a:hover {
   color: #fffb00;
 }
 
-.logo {
-  font-size: 24px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
+/* Estilo para o container da logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20px;
+  max-height: 60px;
+}
+
+/* Estilo para o link da logo */
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remover sublinhado do link */
+  height: 30px;
+  min-height: 20px;
+  max-height: 60px;
+}
+
+/* Estilo para a imagem da logo */
+.logo-img {
+  width: 60px; /* Ajuste conforme necessário */
+  margin-right: 5px; /* Espaçamento entre a imagem e o texto */
+}
+
+/* Estilo para o texto da logo */
+.logo-text {
+  font-size: 20px; /* Ajuste conforme necessário */
+  cursor: pointer;
+  color: #fff12f;
+  font-family: 'omicron.ttf', sans-serif;
 }
 
 nav {
@@ -69,7 +99,7 @@ main {
   transition: 0.3s;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 600px) {
   body {
     overflow-x: hidden;
   }
