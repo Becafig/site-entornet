@@ -277,6 +277,14 @@ header .slider-2 {
         height: 40px;
         font-size: 18px;
     }
+    
+    .cards .row {
+    height: 450px;
+    }
+
+    .cards .row-1 {
+    height: 450px;
+    }   
 }
 
 
