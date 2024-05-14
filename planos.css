@@ -22,6 +22,7 @@ header {
     max-width: 100%;
     max-height: 100%;
     position: relative;
+    height: 750px;
 }
 
 .wrapper {
@@ -31,7 +32,7 @@ header {
     border-radius: 70px;
     padding: 30px;
     box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.315);
-    height: auto;
+    height: 750px;
     margin: 0 auto 1%;
 }
 
@@ -115,12 +116,12 @@ header .slider-2 {
 
 .cards .row {
     width: 33.4%;
-    height: auto;
+    height: 560px;
 }
 
 .cards .row-1 {
     transition: all 0.3s ease;
-    height: auto;
+    height: 560px;
 }
 
 #tab-1:checked ~ .card-area .cards .row-1 {
@@ -238,7 +239,7 @@ header .slider-2 {
 }
 
 /* Mídia Query para dispositivos móveis */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 530px) {
     .wrapper {
         border-radius: 40px;
         padding: 20px;
