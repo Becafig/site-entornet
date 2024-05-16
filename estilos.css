@@ -526,13 +526,13 @@ header {
 }
 
 .header {
+    min-height: 100%;
+    min-width: 100%;
     display: flex;
     justify-content: center;
-    min-height: 100vh;
-    background-color: #f5f0f0;
-    max-width: 100%;
-    max-height: 100%;
-    position: relative;
+    background-color: #f3f3f3;
+    position: absolute;
+    z-index: -1;
 }
 
 .wrapper {
@@ -546,6 +546,7 @@ header {
     left: 65%;
     top: 12%;
     border-radius: 10px;
+    z-index: 200;
 }
 
 .wrapper header {
@@ -840,21 +841,21 @@ header .slider-2 {
     }
 }
 
-@media only screen and (min-width: 1688px) {
+               /*                     Planos e beneficios                   */
+
+@media only screen and (min-width: 1588px) {
 
   .wrapper {
-    min-width: 550px;
-    background: #ffffffd3;
-    border-radius: 70px;
     padding: 30px;
-    box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.315);
-    height: auto;
-    min-height: 750px;
-    max-height: 800px;
-    margin: 0 auto 1%;
-    left: -90px;
-    position: relative;
-}
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.315);
+    height: 750px;
+    width: 40%;
+    position: absolute;
+    left: 55%;
+    top: 10%;
+    border-radius: 10px;
+    background: #ffffffd3;
+  }
 
 .row .price-details {
   margin: 5px 0;
@@ -875,6 +876,24 @@ header .slider-2 {
   margin-bottom: 3%;
   margin-top: 15px;
 }
+
+.container {
+  width: 60%;
+}
+
+.service {
+  width: 100%;
+}
+
+.cards {
+  width: 100%;
+}
+
+.card {
+  min-height: 340px;
+  min-width: 280px;
+}
+
 }
 
 
