@@ -12,6 +12,8 @@
   body {
     margin: 0;
     padding: 0%;
+    position: absolute;
+    z-index: -1;
   }
   
   #navbranco {
@@ -423,7 +425,7 @@ a.active{
     bottom: 50px;
     left: 50%;
     width: max-content;
-    z-index: 100;
+    z-index: 50;
     display: flex;
     gap: 20px;
 }
@@ -930,11 +932,6 @@ header .slider-2 {
         max-width: 100%;
     }
 
-    .centro {
-        font-size: 16px;
-        margin-bottom: 3%;
-    }
-
     .logo-img {
         margin-right: 0; /* Remove a margem da imagem da logo */
         margin-bottom: 10px; /* Adiciona um espaçamento entre a imagem e o texto da logo */
@@ -1180,6 +1177,11 @@ h1 span {
 /* Ocultar conteúdo em telas menores que 600px */
 @media (max-width: 600px) {
 
+  .centro {
+    font-size: 14px;
+  }
+
+
   .container {
     left: 25%;
   }
@@ -1200,15 +1202,40 @@ h1 span {
     z-index: 1030;
     background-color: rgb(255, 255, 255);
     top: 9%;
+    z-index: 1050;
 
+  }
+
+  .wrapper button {
+    top: 75%;
   }
 
   #tab-1:checked ~ .card-area .cards-planos .row-1 {
     margin-left: -1%;
-    width: 54%;
-    min-width: 300px;
+    width: 51%;
+    min-width: 200px;
     max-width: 100%;
     z-index: 2000;
+}
+
+.card-area {
+  height: 100%;
+}
+
+#tab-1:checked ~ header .slider-2 {
+  left: 4.2%;
+}
+
+#tab-2:checked ~ header .slider-2 {
+  left: 40%;
+}
+
+#tab-3:checked ~ header .slider-2 {
+  left: 75.2;
+}
+
+#tab-4:checked ~ header .slider-2 {
+  left: 92.5%;
 }
 
 .cards-planos {
@@ -1238,13 +1265,12 @@ h1 span {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 400px;
+    width: 90%;
     height: 100%;
     background-color: #ffffff;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     transition: right 0.3s ease;
-    overflow-y: auto;
-    z-index: 2000;
+    z-index: 1000;
   }
   
   .side-menu.open {
@@ -1287,9 +1313,59 @@ h1 span {
   }
   
   .cardbranco a {
-    right: 5%;
+    right: 0%;
     position: relative;
   }
+
+  .select-menu{
+    width: 166px;
+    max-height: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 29%;
+
+  }
+
+  .select-menu a {
+    font-size: 11px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  div span {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .redesocial {
+    gap: 1%;
+    display: flex;
+  }
+
+  .service h1 {
+    top: 0%;
+    right: -9%;
+  }
+
+  .cards {
+    margin-right: 30%;
+  }
+
+  .header {
+    height: 1700px;
+  }
+
+  header label {
+    padding: 0 10px;
+  }
+
+  .slider {
+    z-index: -1;
+  }
+
 
 }
 
