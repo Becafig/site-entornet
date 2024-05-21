@@ -6,6 +6,13 @@
 /* Media Queries */
 
 /* For screens smaller than 1200px */
+@media screen and (min-width: 1500px) {
+  nav {
+    top: 2.9%;
+  }
+}
+
+
 @media screen and (max-width: 1200px) {
   .wrapper {
     width: 40%;
