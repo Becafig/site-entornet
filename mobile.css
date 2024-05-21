@@ -1,0 +1,560 @@
+/* Global styles */
+#menuButton {
+  display: none;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 1200px */
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 40%;
+    left: 72%;
+    transform: translateX(-50%);
+    top: 18%;
+  }
+
+  .container {
+    right: 42%;
+  }
+
+  .card {
+    height: 233px;
+    width: 190px;
+  }
+
+  .header {
+    min-height: 155%;
+  }
+
+  .redesocial {
+    gap: 10px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For screens smaller than 992px */
+@media screen and (max-width: 992px) {
+  .wrapper {
+    width: 46.5%;
+    left: 76%;
+    transform: translateX(-50%);
+  }
+
+  .header {
+    min-height: 155%;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+}
+
+/* For screens smaller than 900px */
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .cards {
+    margin-top: 86px;
+    width: 100%;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    height: 233px;
+    width: 190px;
+  }
+
+  .header {
+    min-height: 145%;
+  }
+
+  .wrapper {
+    top: 20%;
+  }
+
+}
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 50%;
+    height: 700px;
+    left: 74%;
+    top: 15%;
+    transform: translateX(-50%);
+  }
+
+  .wrapper button {
+    top: 85%;
+  }
+
+  .cards {
+    margin-right: 47%;
+  }
+
+  .card {
+    height: 260px;
+    width: 181px;
+    padding: 1% 2%;
+  }
+
+  header label {
+    font-size: 14px;
+  }
+
+  .cardbranco {
+    right: 63%;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .selecionarmenu {
+    right: 23%;
+  }
+}
+
+/* For screens smaller than 740px */
+@media (max-width: 740px) {
+  .ofertas {
+    display: none;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 518px;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+  }
+
+  .centro {
+    font-size: 14px;
+  }
+
+  .container {
+    left: 25%;
+  }
+
+  .ofertas {
+    display: flex;
+  }
+
+  .wrapper button {
+    top: 84%;
+  }
+
+  #tab-1:checked ~ .card-area .cards-planos .row-1 {
+    margin-left: 0%;
+    width: 49%;
+    min-width: 200px;
+    max-width: 100%;
+    z-index: 2000;
+  }
+
+  .card-area {
+    height: 100%;
+  }
+
+  #tab-1:checked ~ header .slider-2 {
+    left: 4.2%;
+  }
+
+  #tab-2:checked ~ header .slider-2 {
+    left: 40%;
+  }
+
+  #tab-3:checked ~ header .slider-2 {
+    left: 75.2%;
+  }
+
+  #tab-4:checked ~ header .slider-2 {
+    left: 92.5%;
+  }
+
+  .cards-planos {
+    width: 50%;
+  }
+
+  #menuButton {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: -14px;
+    font-size: 24px;
+    background-color: #0003a5;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 45%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    z-index: 2000;
+  }
+
+  .side-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 90%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .side-menu.open {
+    right: 0;
+    background-color: #ffffff;
+    z-index: 2000;
+  }
+
+  .side-menu.close {
+    right: -100%;
+  }
+
+  .header-2 {
+    padding: 1px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+    z-index: 2000;
+  }
+
+  .card-area {
+    padding: 0px;
+  }
+
+  .cards-planos .row {
+    margin-bottom: 0px;
+  }
+
+  .price-details .price {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .features {
+    list-style: none;
+    padding: 0;
+  }
+
+  .features li {
+    margin-bottom: 10px;
+  }
+
+  .cardbranco a {
+    right: 0%;
+    position: relative;
+  }
+
+  .select-menu {
+    width: 166px;
+    max-height: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 29%;
+  }
+
+  .select-menu a {
+    font-size: 11px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+  div span {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .redesocial {
+    gap: 1%;
+    display: flex;
+  }
+
+  .service h1 {
+    top: 0%;
+    right: 30%;
+  }
+
+  .cards {
+    margin-right: 30%;
+  }
+
+  .header {
+    height: 950px;
+  }
+
+  header label {
+    padding: 0 10px;
+  }
+
+  .slider {
+    z-index: -1;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: calc(100vh - 8vh);
+    background: rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .nav-list.active {
+    transform: translateX(0);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  .button-nav {
+    background-color: blue;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+  }
+
+  .button-nav:hover {
+    color: #1b01ad;
+    background-color: #fffb00;
+  }
+
+  .centro {
+    text-align: center;
+  }
+
+  #tab-1:checked ~ header .slider-2 {
+    left: 0.5%;
+    width: 25%;
+    transform: translateX(1%);
+  }
+
+  #tab-2:checked ~ header .slider-2 {
+    left: 38.5%;
+    width: 25%;
+    transform: translateX(-55%);
+  }
+
+  #tab-3:checked ~ header .slider-2 {
+    left: 77%;
+    width: 25%;
+    transform: translateX(-115%);
+  }
+
+  #tab-4:checked ~ header .slider-2 {
+    left: 100%;
+    width: 23%;
+    transform: translateX(-105%);
+  }
+}
+
+/* For screens smaller than 640px */
+@media screen and (max-width: 640px) {
+  .service h1 {
+    right: 14%;
+  }
+}
+
+/* For screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+  .selecionarmenu {
+    width: 166px;
+    max-height: 30px;
+    cursor: pointer;
+    right: 27%;
+  }
+
+  span {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .selecionar {
+    width: 171px;
+  }
+
+  .selecionarmenu a {
+    font-size: 11px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+  .redesocial {
+    gap: 5px;
+  }
+
+  nav {
+    top: 4.5%;
+  }
+
+  .slider .list .item .content {
+    padding-right: 0;
+  }
+
+  .slider .list .item .content .titulo {
+    font-size: 50px;
+  }
+
+  header label {
+    font-size: 11px;
+  }
+
+  .wrapper header {
+    border-radius: 20px;
+  }
+
+  .row .price-details {
+    padding-bottom: 15px;
+  }
+
+  .price-details .price::before {
+    left: -20px;
+    top: 10px;
+    font-size: 12px;
+  }
+
+  .price-details .price::after {
+    right: -25px;
+    bottom: 10px;
+    font-size: 10px;
+  }
+
+  .price-details p {
+    font-size: 18px;
+  }
+
+  .price-details .price {
+    font-size: 40px;
+  }
+
+  .row .features li {
+    font-size: 15px;
+  }
+
+  .wrapper button {
+    height: 40px;
+    font-size: 18px;
+    margin-top: 10%;
+  }
+
+  #tab-1:checked ~ .card-area .cards-planos .row-1 {
+    margin-left: -0%;
+    width: 49%;
+    min-width: 280px;
+    max-width: 100%;
+  }
+
+  .logo-img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* For screens smaller than 450px */
+@media screen and (max-width: 450px) {
+  .service h1 {
+    right: -6%;
+  }
+
+  .cards {
+    margin-right: 44%;
+  }
+
+  .header {
+    height: 50%;
+  }
+}
+
+@media (max-width: 991px) {
+  .contatous {
+    padding: 20px;
+    top: -125%;
+  }
+  .caixa {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "form"
+    "info"
+    "mapa";
+  }
+  .formcaixa .row50 {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+  }
+  .inputcaixa {
+    width: 100%;
+  }
+  .contato {
+    padding: 30px;
+  }
+  .mapa {
+    min-height: 300px;
+    padding: 0;
+  }
+  .header-ctt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200%;
+  }
+  
+}
