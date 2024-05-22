@@ -848,7 +848,7 @@ header .slider-2 {
 
 .container {
     box-sizing: border-box;
-    min-height: 100vh;
+    min-height: 65vh;
     width: 60%;
     background-color: rgba(255, 255, 255, 0);
     display: flex;
