@@ -483,7 +483,7 @@
   }
 
   .wrapper header {
-    border-radius: 20px;
+    border-radius: 3cm;
   }
 
   .row .price-details {
@@ -535,6 +535,15 @@
 
 /* For screens smaller than 450px */
 @media screen and (max-width: 450px) {
+
+  .wrapper {
+    height: 520px;
+    top: 11%;
+  }
+
+  header label {
+    padding: 0 7px;
+  }
 
   .header-ctt {
     max-height: 185%;
