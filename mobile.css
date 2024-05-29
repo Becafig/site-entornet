@@ -41,11 +41,7 @@
     transform: translateX(-50%);
     top: 18%;
   }
-
-  .container {
-    right: 42%;
-  }
-
+  
   .card {
     height: 233px;
     width: 190px;
