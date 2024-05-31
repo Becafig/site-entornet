@@ -1190,7 +1190,7 @@ footer {
   color: white;
   padding: 10px 0;
   position: absolute;
-  bottom: -35%;
+  bottom: -38%;
   min-width: 100%;
 }
 
@@ -1199,7 +1199,7 @@ footer {
   justify-content: space-around;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .footer-section {
@@ -1239,4 +1239,6 @@ footer {
   padding-top: 10px;
   border-top: 1px solid #444;
 }
+
+
 
