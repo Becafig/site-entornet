@@ -732,3 +732,19 @@
   }
 
 }
+
+@media (max-height: 640px) {
+
+  .header-ctt {
+    min-height: 135%;
+  }
+
+  .contatous {
+    top: -165%;
+  }
+
+  footer {
+    bottom: -26%;
+  }
+  
+}
