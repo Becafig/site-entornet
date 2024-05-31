@@ -30,7 +30,7 @@
     margin-left: 0.5%;
     width: 50%;
     min-width: 250px;
-}
+  }
 }
 
 
@@ -41,7 +41,15 @@
     transform: translateX(-50%);
     top: 18%;
   }
-  
+
+  .services-wrapper {
+    padding: 0%;
+  }
+
+  .container {
+    right: 39%;
+  }
+
   .card {
     height: 233px;
     width: 190px;
@@ -60,8 +68,50 @@
   }
 }
 
-/* For screens smaller than 992px */
-@media screen and (max-width: 992px) {
+
+@media (max-width: 931px) {
+  .contatous {
+    padding: 0px;
+    top: -55%;
+  }
+  .caixa {
+    right: 0%;
+  }
+  .formcaixa .row50 {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+  }
+  .inputcaixa {
+    width: 100%;
+  }
+  .contato {
+    padding: 20px;
+    height: 950px;
+    width: 450px;
+    margin-left: 2%;
+  }
+
+  .info {
+    width: 430px;
+    height: 467px;
+    margin-left: -5%;
+  }
+
+  .mapa {
+    min-height: 300px;
+    width: 430px;
+    height: 467px;
+    padding: 0;
+    margin-top: -12.5%;
+    margin-left: -5%;
+  }
+  .header-ctt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120%;
+  }
   .wrapper {
     width: 46.5%;
     left: 76%;
@@ -69,12 +119,21 @@
   }
 
   .header {
-    min-height: 155%;
+    min-height: 165%;
   }
 
   .mobile-menu {
     display: none;
   }
+
+  .cards {
+    margin-top: 36px;
+  }
+
+  footer {
+    bottom: -29%;
+  }
+
 }
 
 /* For screens smaller than 900px */
@@ -83,8 +142,27 @@
     font-size: 3.5rem;
   }
 
+  .selecionarmenu {
+    right: 17%;
+  }
+
+  .cardbranco {
+    right: 65%;
+  }
+
+  .caixa {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "form"
+    "info"
+    "mapa";
+  }
+
   .cards {
-    margin-top: 86px;
+    margin-top: 36px;
     width: 100%;
     gap: 15px;
     grid-template-columns: repeat(2, 1fr);
@@ -96,11 +174,37 @@
   }
 
   .header {
-    min-height: 145%;
+    min-height: 155%;
   }
 
   .wrapper {
     top: 20%;
+  }
+
+  .header-ctt {
+    height: 200%;
+  }
+
+  .contatous {
+    top: -125%;
+  }
+
+  .mapa {
+    height: auto;
+    margin-left: auto;
+    margin-top: 1%;
+    min-height: 300px;
+  }
+
+  .info {
+    height: auto;
+    margin-left: auto;
+    margin-top: auto;
+    min-height: 300px;
+  }
+
+  footer {
+    bottom: -18%;
   }
 
 }
@@ -162,10 +266,6 @@
 
   .centro {
     font-size: 14px;
-  }
-
-  .container {
-    left: 25%;
   }
 
   .ofertas {
@@ -314,7 +414,7 @@
   }
 
   .cards {
-    margin-right: 40%;
+    margin-right: -25%;
   }
 
   .header {
@@ -323,10 +423,6 @@
 
   header label {
     padding: 0 10px;
-  }
-
-  .slider {
-    z-index: -1;
   }
 
   body {
@@ -422,17 +518,21 @@
     width: 23%;
     transform: translateX(-105%);
   }
-}
 
-/* For screens smaller than 640px */
-@media screen and (max-width: 640px) {
-  .service h1 {
-    right: -5%;
+  footer {
+    bottom: -12%;
   }
+
+
 }
 
 /* For screens smaller than 600px */
 @media only screen and (max-width: 600px) {
+
+  .service h1 {
+    right: -5%;
+  }
+
   .selecionarmenu {
     width: 166px;
     max-height: 30px;
@@ -527,6 +627,11 @@
     margin-right: 0;
     margin-bottom: 10px;
   }
+
+  footer {
+    bottom: -14%;
+  }
+
 }
 
 /* For screens smaller than 450px */
@@ -542,24 +647,34 @@
   }
 
   .header-ctt {
-    max-height: 185%;
+    max-height: 115%;
+  }
+
+  .contatous {
+    top: -170%;
   }
 
   .service h1 {
-    right: -6%;
+    right: 10%;
   }
 
   .cards {
-    margin-right: 95%;
+    margin-right: 37%;
     width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    width: 230px;
+    height: 220px;
   }
 
   .header {
-    min-height: 105%;
+    height: 1550px;
   }
 
   .services-wrapper {
-    padding: 3% 5%;
+    padding: 1% 5%;
     width: 100%;
   }
 
@@ -567,43 +682,53 @@
     margin-top: 95vh;
   }
 
-}
+  .container {
+    right: 10%;
+  }
 
-@media (max-width: 991px) {
-  .contatous {
-    padding: 20px;
-    top: -117%;
-  }
-  .caixa {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "form"
-    "info"
-    "mapa";
-  }
-  .formcaixa .row50 {
-    display: flex;
-    gap: 0;
-    flex-direction: column;
-  }
-  .inputcaixa {
-    width: 100%;
-  }
-  .contato {
-    padding: 30px;
+  .form {
+    width: 400px;
+    margin-left: auto;
   }
   .mapa {
-    min-height: 300px;
-    padding: 0;
+    width: 400px;
   }
-  .header-ctt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200%;
+  .info {
+    width: 400px ;
   }
-  
+
+  .cardbranco {
+    right: 61%;
+  }
+
+  footer {
+    bottom: -22%;
+  }
+
+}
+
+@media (max-width: 416px) {
+
+  .form {
+    width: 380px;
+    margin-left: auto;
+  }
+
+  .info {
+    width: 380px;
+    margin-left: auto;
+  }
+
+  .mapa {
+    width: 380px;
+  }
+
+  .cardbranco {
+    right: 56%;
+  }
+
+  footer {
+    bottom: -23%;
+  }
+
 }
