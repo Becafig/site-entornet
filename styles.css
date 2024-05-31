@@ -733,7 +733,7 @@
 
 }
 
-@media (max-height: 650px) {
+@media (min-height: 660px) {
 
   .header-ctt {
     min-height: 135%;
@@ -741,28 +741,6 @@
 
   .contatous {
     top: -175%;
-  }
-
-  .form {
-    width: 380px;
-    margin-left: auto;
-  }
-
-  .info {
-    width: 380px;
-    margin-left: auto;
-  }
-
-  .mapa {
-    width: 380px;
-  }
-
-  .cardbranco {
-    right: 56%;
-  }
-
-  footer {
-    bottom: -23%;
   }
   
 }
