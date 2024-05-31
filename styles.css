@@ -733,14 +733,18 @@
 
 }
 
-@media (min-height: 660px) {
+@media (max-height: 640px) {
 
   .header-ctt {
     min-height: 135%;
   }
 
   .contatous {
-    top: -175%;
+    top: -165%;
+  }
+
+  footer {
+    bottom: -26%;
   }
   
 }
