@@ -598,6 +598,10 @@
 
   @media only screen and (max-width: 600px) {
 
+    body {
+      background-size: 500px; 
+    }
+
     .tel-bole {
       display: none;
     }
