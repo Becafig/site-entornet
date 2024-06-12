@@ -750,6 +750,14 @@
       display: none;
     }
 
+    .oplista{
+      width: 45%;
+    }
+
+    .oplista.active {
+      width: 45%;
+    }
+
   }
 
   @media (max-width: 388px) {
