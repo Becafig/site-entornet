@@ -626,7 +626,7 @@
     }
   
     .selecionarmenu {
-      width: 166px;
+      width: 200px;
       max-height: 30px;
       cursor: pointer;
       right: 27%;
@@ -639,7 +639,7 @@
     }
   
     .selecionar {
-      width: 171px;
+      width: 200px;
     }
   
     .selecionarmenu a {
