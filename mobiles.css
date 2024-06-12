@@ -598,6 +598,17 @@
 
   @media only screen and (max-width: 600px) {
 
+    .oplista{
+      width: 35%;
+    }
+
+    .oplista.active {
+      height: 150px;
+      text-decoration: none;
+      z-index: 1001;
+      width: 35%;
+    }
+    
     body {
       background-size: 500px; 
     }
