@@ -481,8 +481,7 @@
   /* seção proximovoltarArrows */
   .proximovoltarArrows{
       position: absolute;
-      top: 80%;
-      right: 52%;
+      right: -34%;
       z-index: 100;
       width: 300px;
       max-width: 30%;
@@ -490,6 +489,7 @@
       gap: 10px;
       align-items: center;
   }
+
   .proximovoltarArrows button{
       width: 40px;
       height: 40px;
@@ -502,6 +502,7 @@
       transition: .5s;
       cursor: pointer;
   }
+
   .proximovoltarArrows button:hover{
       background-color: #fffc33;
       color: #170097cb;
