@@ -756,6 +756,7 @@
 
     .oplista.active {
       width: 45%;
+      heigth: 150px;
     }
 
   }
