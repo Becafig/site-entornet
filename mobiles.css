@@ -70,17 +70,10 @@
   }
 
   .nav-list {
-    position: absolute;
     top: 8vh;
     right: 0;
     width: 50vw;
     height: calc(100vh - 8vh);
-    background: rgba(0, 0, 0, 0.3);
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
   }
 
   .nav-list li {
@@ -181,10 +174,6 @@
       width: 55%;
     }
   
-    .container {
-
-    }
-  
     .header {
       min-height: 170%;
     }
@@ -234,21 +223,9 @@
       width: 190px;
     }
   
-    .header {
-
-    }
-  
     .h3-planos {
       top: 66%;
       left: 44%;
-    }
-  
-    .container {
-
-    }
-  
-    .wrapper {
-
     }
   
     .contatous {
@@ -277,17 +254,9 @@
 
   /* For screens smaller than 768px */
 @media screen and (max-width: 768px) {
-
-    .h3-planos {
-
-    }
   
     h1 {
       right: 20%;
-    }
-  
-    .container {
-
     }
   
     .wrapper {
@@ -295,15 +264,8 @@
       height: 700px;
     }
   
-    .contatous {
-    }
-  
     .wrapper button {
       top: 85%;
-    }
-  
-    .cards {
-
     }
   
     .card {
@@ -314,9 +276,6 @@
   
     header label {
       font-size: 14px;
-    }
-  
-    .cardbranco {
     }
   
     .mobile-menu {
@@ -500,17 +459,10 @@
     }
   
     .nav-list {
-      position: absolute;
       top: 8vh;
       right: 0;
       width: 50vw;
       height: calc(70vh - 8vh);
-      background: rgba(0, 0, 0, 0.3);
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
     }
   
     .nav-list li {
@@ -608,9 +560,9 @@
       z-index: 1001;
       width: 35%;
     }
-    
+
     body {
-      background-size: 450px; 
+      background-size: 500px; 
     }
 
     .tel-bole {
@@ -726,12 +678,23 @@
 
     .nav-list {
       width: 60vw;
-      height: calc(95vh - 8vh);
+      height: calc(100vh - 8vh);
     }
   
   }
 
   @media (max-width: 430px) {
+
+    .card p {
+      margin: 10px 0;
+    }
+
+    .card i {
+      color: aqua;
+      margin-top: 7px;
+      margin-bottom: 7px;
+      font-size: 35px;
+    }
 
     .contato {
       padding: 20px;
@@ -756,7 +719,7 @@
 
     .oplista.active {
       width: 180px;
-      heigth: 150px;
+      height: 150px;
     }
 
   }
