@@ -1,45 +1,37 @@
-let proximoBtn = document.querySelector('.proximo')
-let voltarBtn = document.querySelector('.voltar')
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.slider');
+    const items = document.querySelectorAll('.slider .list .item');
+    let currentIndex = 0;
+    const totalItems = items.length;
+    let autoSlideInterval;
 
-let slider = document.querySelector('.slider')
-let sliderList = slider.querySelector('.slider .list')
-let thumbnail = document.querySelector('.slider .thumbnail')
-let thumbnailItems = thumbnail.querySelectorAll('.item')
+    // Função para mostrar o próximo slide
+    function showNextSlide() {
+        items[currentIndex].style.zIndex = 1;
+        items[currentIndex].style.animation = 'none';
 
-thumbnail.appendChild(thumbnailItems[0])
+        currentIndex = (currentIndex + 1) % totalItems;
 
-// Função para botão proximo 
-proximoBtn.onclick = function() {
-    moveSlider('proximo')
-}
-
-
-// Função para botão voltar 
-voltarBtn.onclick = function() {
-    moveSlider('voltar')
-}
-
-
-function moveSlider(direction) {
-    let sliderItems = sliderList.querySelectorAll('.item')
-    let thumbnailItems = document.querySelectorAll('.thumbnail .item')
-    
-    if(direction === 'proximo'){
-        sliderList.appendChild(sliderItems[0])
-        thumbnail.appendChild(thumbnailItems[0])
-        slider.classList.add('proximo')
-    } else {
-        sliderList.prepend(sliderItems[sliderItems.length - 1])
-        thumbnail.prepend(thumbnailItems[thumbnailItems.length - 1])
-        slider.classList.add('voltar')
+        items[currentIndex].style.zIndex = 2;
+        items[currentIndex].style.animation = 'showImage .5s linear 1 forwards';
+        slider.classList.add('proximo');
+        setTimeout(() => slider.classList.remove('proximo'), 500);
     }
 
+    // Função para iniciar o slide automático
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(showNextSlide, 3000);
+    }
 
-    slider.addEventListener('animationend', function() {
-        if(direction === 'proximo'){
-            slider.classList.remove('proximo')
-        } else {
-            slider.classList.remove('voltar')
-        }
-    }, {once: true}) // Remove o evento listener depois de ser acionado uma vez
-}
+    // Função para parar o slide automático
+    function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+    }
+
+    // Adicionar eventos de mouseover e mouseout para parar e iniciar o slide automático
+    slider.addEventListener('mouseover', stopAutoSlide);
+    slider.addEventListener('mouseout', startAutoSlide);
+
+    // Iniciar o slide automático ao carregar a página
+    startAutoSlide();
+});
