@@ -53,10 +53,16 @@ document.addEventListener('DOMContentLoaded', function() {
     slider.addEventListener('mouseover', stopAutoSlide);
     slider.addEventListener('mouseout', startAutoSlide);
 
+    // Adicionar eventos de touchstart e touchend para dispositivos móveis
+    slider.addEventListener('touchstart', stopAutoSlide);
+    slider.addEventListener('touchend', startAutoSlide);
+
     // Adicionar eventos de mouseover e mouseout para as miniaturas
     thumbnails.forEach((thumbnail) => {
         thumbnail.addEventListener('mouseover', stopAutoSlide);
         thumbnail.addEventListener('mouseout', startAutoSlide);
+        thumbnail.addEventListener('touchstart', stopAutoSlide);
+        thumbnail.addEventListener('touchend', startAutoSlide);
     });
 
     // Adicionar evento de clique nas miniaturas
@@ -72,6 +78,8 @@ document.addEventListener('DOMContentLoaded', function() {
     items.forEach((item) => {
         item.addEventListener('mouseover', stopAutoSlide);
         item.addEventListener('mouseout', startAutoSlide);
+        item.addEventListener('touchstart', stopAutoSlide);
+        item.addEventListener('touchend', startAutoSlide);
     });
 
     // Iniciar o slide automático ao carregar a página
