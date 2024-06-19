@@ -690,7 +690,7 @@
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    box-shadow: 4px 4px 4px 4px rgba(2, 0, 143, 0.068);
+    box-shadow: 4px 4px 4px 5px rgb(0 0 0 / 8%);
   }
   
   .card::after {
