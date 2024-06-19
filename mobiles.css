@@ -683,7 +683,7 @@
 
     .nav-list {
       width: 60vw;
-      height: calc(100vh - 10vh);
+      height: 1110%;
     }
   
   }
