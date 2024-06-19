@@ -66,15 +66,12 @@
     right: -100%;
     width: 60%;
     height: 100%;
-    background-color: #ffffff;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     transition: right 0.3s ease;
     z-index: 1000;
   }
 
   .side-menu.open {
     right: 0;
-    background-color: #ffffff;
     z-index: 2000;
   }
 
@@ -374,15 +371,13 @@
       right: -100%;
       width: 90%;
       height: 100%;
-      background-color: #ffffff;
-      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+      background-color: #ffffff00;
       transition: right 0.3s ease;
       z-index: 1000;
     }
   
     .side-menu.open {
       right: 0;
-      background-color: #ffffff;
       z-index: 2000;
     }
   
@@ -683,7 +678,7 @@
 
     .nav-list {
       width: 60vw;
-      height: 1110%;
+      height: calc(100vh - 8vh);
     }
   
   }
@@ -716,7 +711,11 @@
     }
 
     .wrapper {
-      border: none;
+      width: 93%;
+      min-height: 90%;
+      left: 46%;
+      transform: translateX(-50%);
+      top: -3%;
     }
 
     .features li span {
@@ -752,7 +751,7 @@
   @media (max-width: 388px) {
 
     .redesocial {
-      gap: 0px;
+      gap: 0;
     }
 
     .cardbranco {
