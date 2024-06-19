@@ -718,6 +718,10 @@
       top: -3%;
     }
 
+    header label {
+    font-size: 10px;
+    }
+
     .features li span {
       font-size: 15px;
     }
