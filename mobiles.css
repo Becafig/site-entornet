@@ -2,7 +2,24 @@
     .contatous {
       padding: 0;
     }
-}
+    .thumbnail{
+      position: relative;
+      top: 36%;
+      left: -10%;
+      width: max-content;
+      z-index: 50;
+      display: flex;
+      gap: 20px;
+    }
+  
+    .thumbnail .item{
+      width: 140px;
+      height: 180px;
+      flex-shrink: 0;
+      position: relative;
+      box-shadow: 70px #000000;
+    }
+  }
 
 @media (max-width: 980px) {
 
@@ -37,10 +54,6 @@
     left: 50%;
     top: 1%;
     transform: translateX(-50%);
-}
-
-  .centro {
-    font-size: 14px;
   }
 
   .ofertas {
@@ -65,30 +78,45 @@
     z-index: 2000;
   }
 
-  .side-menu.close {
-    right: -100%;
+  .button-nav {
+    background-color: blue;
+    border-radius: 30px;
+    padding: 10px;
   }
 
-  .nav-list {
-    top: 8vh;
-    right: 0;
-    width: 50vw;
-    height: calc(100vh - 8vh);
+  .button-nav:hover {
+    color: #1b01ad;
+    background-color: #fffb00;
   }
+}
 
-  .nav-list li {
-    margin-left: 0;
-    opacity: 0;
-  }
+@media (max-width: 945px) {
 
-  .mobile-menu {
-    display: block;
-  }
-
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: calc(100vh - 8vh);
+      background: rgba(0, 0, 0, 0.486);
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  
   .nav-list.active {
     transform: translateX(0);
   }
-
+  
   @keyframes navLinkFade {
     from {
       opacity: 0;
@@ -99,34 +127,34 @@
       transform: translateX(0);
     }
   }
-
+  
   .mobile-menu.active .line1 {
     transform: rotate(-45deg) translate(-8px, 8px);
   }
-
+  
   .mobile-menu.active .line2 {
     opacity: 0;
   }
-
+  
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
-
+  
   .button-nav {
     background-color: blue;
+    width: 100%;
     border-radius: 30px;
-    padding: 10px;
-    display: flex;
+    padding: 5px;
   }
-
+  
   .button-nav:hover {
     color: #1b01ad;
     background-color: #fffb00;
   }
-
-}
-
-@media (max-width: 945px) {
+  
+  .centro {
+    text-align: center;
+  }
 
     .contatous {
       padding: 0px;
@@ -170,16 +198,8 @@
       left: 42%;
     }
   
-    .wrapper {
-      width: 55%;
-    }
-  
     .header {
       min-height: 170%;
-    }
-  
-    .mobile-menu {
-      display: none;
     }
   
     .cards {
@@ -189,6 +209,7 @@
 
 
 @media screen and (max-width: 900px) {
+
     h1 {
       font-size: 3.5rem;
     }
@@ -219,8 +240,8 @@
     }
   
     .card {
-      height: 233px;
-      width: 190px;
+      height: 250px;
+      width: 220px;
     }
   
     .h3-planos {
@@ -259,18 +280,13 @@
       right: 20%;
     }
   
-    .wrapper {
-      width: 50%;
-      height: 700px;
-    }
-  
     .wrapper button {
       top: 85%;
     }
   
     .card {
-      height: 260px;
-      width: 181px;
+      height: 285px;
+      width: 205px;
       padding: 1% 2%;
     }
   
@@ -278,9 +294,6 @@
       font-size: 14px;
     }
   
-    .mobile-menu {
-      display: none;
-    }
   
     .selecionarmenu {
       right: 23%;
@@ -289,20 +302,13 @@
 
 
   @media (max-width: 740px) {
-    .ofertas {
+
+    .tel-bole {
       display: none;
     }
-  
-    .wrapper {
-      width: 100%;
-      height: 518px;
-      left: 50%;
-      top: 15%;
-      transform: translateX(-50%);
-    }
-  
-    .centro {
-      font-size: 14px;
+
+    .ofertas {
+      display: none;
     }
   
     .ofertas {
@@ -399,11 +405,6 @@
       margin-bottom: 0px;
     }
   
-    .price-details .price {
-      font-size: 24px;
-      font-weight: bold;
-    }
-  
     .features {
       list-style: none;
       padding: 0;
@@ -447,7 +448,7 @@
   
     .service h1 {
       top: 0%;
-      right: -13%;
+      right: 0%;
     }
   
     header label {
@@ -468,10 +469,6 @@
     .nav-list li {
       margin-left: 0;
       opacity: 0;
-    }
-  
-    .mobile-menu {
-      display: block;
     }
   
     .nav-list.active {
@@ -544,11 +541,23 @@
     footer {
       bottom: -12%;
     }
-  
+    
+    .thumbnail {
+      gap: 10px;
+    }
+
+    .thumbnail .item{
+      width: 120px;
+      height: 160px;
+      flex-shrink: 0;
+      position: relative;
+      box-shadow: 70px #000000;
+    }
+
   }
 
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 635px) {
 
     .oplista{
       width: 35%;
@@ -571,10 +580,6 @@
 
     .cards {
       grid-template-columns: repeat(2, 1fr);
-    }
-
-    .service h1 {
-      right: -5%;
     }
   
     .selecionarmenu {
@@ -696,18 +701,33 @@
       font-size: 35px;
     }
 
+    .card {
+      width: 180px;
+    }
+
     .contato {
       padding: 20px;
       width: 390px
     }
 
-    .wrapper {
-      width: 98%;
-      height: 720px;
-      left: 49%;
-      top: 1%;
-      transform: translateX(-50%);
+    .centro {
+      margin-bottom: 10%;
+      font-size: 16px;
     }
+
+    .wrapper {
+      border: none;
+    }
+
+    .features li span {
+      font-size: 15px;
+    }
+
+    .side-menu {
+      width: 85%;
+    }
+
+    h3
 
     .h3-planos {
       display: none;
@@ -722,9 +742,27 @@
       height: 150px;
     }
 
+    .thumbnail .item {
+      width: 80px;
+      height: 110px;
+    }
+
   }
 
   @media (max-width: 388px) {
+
+    .redesocial {
+      gap: 0px;
+    }
+
+    .cardbranco {
+      gap: 0px;
+    }
+
+    .selecionarmenu {
+      max-width: 200px;
+     }
+
     .contato {
       padding: 10px;
       width: 370px
