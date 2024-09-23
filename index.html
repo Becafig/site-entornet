@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Entornet</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mobiles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+<body>
+ <header>
+
+    <section class="navegadores">
+    
+        <nav id="navbar">
+            <div id="navbranco">
+                <ul class="cardbranco">
+                    <div class="tel-bole">
+                        <a href="http://ispadmin.entornet.com.br/prod/src/central/central.php?dest=segundavia.html">2° via do Boleto</a>
+                        <a href="tel:+552227781113">Tel:  (22) 2778-1113</a>
+                    </div>
+                    <div class="redesocial">
+                        <a href="https://www.instagram.com/entornetbandalarga/" target="_blank"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></a>
+                        <a href="https://www.facebook.com/entornetbandalarga/?locale=pt_BR" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABUElEQVR4nO2ZzUrDQBDH82S7Vby1JTsoPpAieFBv0qMP4UyEQq03L4KWWh/Am4eASXupYEeiWL9o6W5jdgPzgzku+f/2m00UCYIgBE3DYKwArxTgRANxFaUAJwqor+KkvVZ4beiwqtB6URk8cO557+HhU4Ja1gLFtAlI4NJewODYe3CYV24tEEBo/l4ioEvoxc2dhI86Q767TznLpzyb8Q+CHoGN7YSvb554GTpkgePOcGn44AUGo5RrLZCPX/4E3ju55a3di5Xaexd4/b1imd/XxartvQvYThktAvA/vb6I52wa3gjYMBil9RY47z7WW+D07CE8AdmFQEaAZAppOYlJdiGWbRTkNspyEuu6XSVUyU+L6wlgZi8A1C/7QudcBnv2AnHS9h4cPqoB2IxcKH4u+A6vgPadwn9JUKt4n6/yuV0V3zLYc+55QRCEqCreAAESa+zxbT1rAAAAAElFTkSuQmCC"></a>
+                        <a href="https://wa.me/2227781113" target="_blank"><img src="data:image/png;base64,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"></a>  
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="navpreto">
+            <div class="logo-container">
+                <a href="" class="logo-link">
+                  <img src="logo/entorlogo.png" alt="Entornet Banda Larga Logo" class="logo-img">
+                  <span class="logo-text">entornet banda larga</span>
+                </a>
+              </div>
+              <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+              <ul class="nav-list">
+                <li><a href="#" class="active">Inicio</a></li>
+                <li><a href="#rodasobre" id="sobre">Sobre</a></li>
+                <li><a href="#ancoplanos" id="planos">Planos</a></li>
+                <li><a href="#ancocontato">Contato</a></li>
+                <li><a href="http://ispadmin.entornet.com.br/prod/src/central/logincentral.php" class="button-nav">Central do assinante</a></li>
+              </ul>
+        </nav>
+    
+    </section>
+
+    <section class="areaslider">
+
+<!---->        <div class="slider">
+            <div class="list">
+              <div class="item">
+                <img src="./image/50M.jpg" alt="">
+                <div class="content">
+                  <div class="titulo"></div>
+                  <div class="subtitulo"></div>
+                  <div class="descrição"></div>
+                  <div class="button">
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="./image/100M.jpg" alt="">
+        
+<!---->                <div class="content">
+                    <div class="titulo"> </div>
+                    <div class="subtitulo"> </div>
+                    <div class="descrição"> </div>
+                    <div class="button">
+                        
+                    </div>
+                </div>
+             </div>
+        
+             <div class="item">
+                <img src="./image/300M.jpg" alt="">
+        
+<!---->                <div class="content">
+                    <div class="titulo"> </div>
+                    <div class="subtitulo"> </div>
+                    <div class="descrição"> </div>
+                    <div class="button">
+                        
+                    </div>
+                </div>
+             </div>
+        
+             <div class="item">
+                <img src="./image/500M.jpg" alt="">
+        
+<!---->           <div class="content">
+                    <div class="titulo"> </div>
+                    <div class="subtitulo"> </div>
+                    <div class="descrição"> </div>
+                    <div class="button"> </div>
+                  </div>
+             </div>
+            </div>
+
+            <div class="thumbnail">
+                <div class="item">
+                  <img src="./image/100M.jpg" alt="">
+                </div>
+                <div class="item">
+                  <img src="./image/300M.jpg" alt="">
+                </div>
+                <div class="item">
+                  <img src="./image/500M.jpg" alt="">
+                </div>
+                <div class="proximovoltarArrows">
+                    <div class="item">
+                     <img src="./image/50M.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+
+    <section class="beneficios">
+
+        <div class="container">
+            <div class="services-wrapper">
+                <div class="service">
+                    <h1>Benefícios<span></span></h1>
+                    <div class="cards">
+                        <div class="card">
+                            <i><img width="50" height="50" src="https://img.icons8.com/ios/50/handshake--v1.png" alt="handshake--v1"/></i>
+                            <h2>Experiência e Confiança</h2>
+                            <p>Mais de 20 anos fornecendo conexões confiáveis e de alta velocidade.</p>
+                        </div>
+                        <div class="card">
+                            <i><img width="50" height="50" src="https://img.icons8.com/ios/50/wifi--v1.png" alt="wifi--v1"/></i>
+                            <h2>Instalação + Roteador</h2>
+                            <p>Instalação gratuita para novos assinantes, além de incluir um roteador Gigabit em todos os planos, sem custo adicional.</p>
+                        </div>
+                        <div class="card">
+                            <i><img width="50" height="50" src="icons/variedade.png" alt=""></i>
+                            <h2>Variedade de Planos</h2>
+                            <p>Uma ampla gama de planos de internet para atender às suas necessidades.</p>
+                        </div>
+                        <div class="card">
+                            <i><img width="50" height="50" src="https://img.icons8.com/external-justicon-lineal-justicon/64/external-rocket-science-justicon-lineal-justicon.png" alt="external-rocket-science-justicon-lineal-justicon"/></i>
+                            <h2>Estabilidade Garantida</h2>
+                            <p>Desfrute de uma conexão estável e ininterrupta em todas as circunstâncias.</p>
+                        </div>
+                        <div class="card">
+                            <i><img width="50" height="50" src="icons/fibra.png" alt=""></i>
+                            <h2>Tecnologia de Ponta</h2>
+                            <p>Internet 100% fibra óptica para a melhor experiência de navegação possível.</p>
+                        </div>
+                        <div class="card">
+                            <i><img width="50" height="50" src="https://img.icons8.com/ios/50/under-computer.png" alt="under-computer"/></i>
+                            <h2>Autoatendimento Simplificado</h2>
+                            <p>Fornecemos uma central do assinante para você gerenciar sua conta facilmente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div id="ancoplanos"> </div>
+    <section class="planos">
+        <button id="menuButton">Planos</button>
+        <div id="sideMenu" class="side-menu">
+                <h3 class="h3-planos">Planos</h3>
+                <div class="wrapper">
+                    <input type="radio" name="slider-2" id="tab-1">
+                    <input type="radio" name="slider-2" id="tab-2" checked>
+                    <input type="radio" name="slider-2" id="tab-3">
+                    <input type="radio" name="slider-2" id="tab-4">
+                    <header class="header-2">
+                        <label for="tab-1" class="tab-1">50 Mega</label>
+                        <label for="tab-2" class="tab-2">100 Mega</label>
+                        <label for="tab-3" class="tab-3">300 Mega</label>
+                        <label for="tab-4" class="tab-4">500 Mega</label>
+                        <div class="slider-2"></div>
+                    </header>
+                    
+                    <div class="card-area">
+                        <div class="cards-planos">
+                            <div class="row row-1">
+                                <div class="price-details">
+                                    <span class="price">79,90</span>
+                                    <p>Sem Franquia</p>
+                                </div>
+                                <ul class="features">
+                                    <li><i></i><span><h3 class="centro">🚀 Plano Ideal para famílias pequenas ou usuários individuais que precisam de uma conexão confiável para navegar na web, assistir a vídeos e jogar online.</h3></span></li>
+                                    <li><i></i><span><h3>NOSSOS BENEFÍCIOS</h3></span></li>
+                                    <li><i></i><span>⤷ Atendimento especializado</span></li>
+                                    <li><i></i><span>⤷ Suporte sem burocracia</span></li>
+                                    <li><i></i><span>⤷ 100% de Download</span></li>
+                                    <li><i></i><span>⤷ Sem limite de banda! Faça downloads ilimitados!</span></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="price-details">
+                                    <span class="price">89,90</span>
+                                    <p>Sem Franquia</p>
+                                </div>
+                                <ul class="features">
+                                    <li><i></i><span><h3 class="centro">🔥 Dobre a velocidade e duplique a diversão! Este plano é perfeito para famílias maiores ou para quem deseja uma experiência de streaming e download ainda mais rápida.</h3></span></li>
+                                    <li><i></i><span><h3>NOSSOS BENEFÍCIOS</h3></span></li>
+                                    <li><i></i><span>⤷ Atendimento especializado</span></li>
+                                    <li><i></i><span>⤷ Suporte sem burocracia</span></li>
+                                    <li><i></i><span>⤷ 100% de Download</span></li>
+                                    <li><i></i><span>⤷ Sem limite de banda! Faça downloads ilimitados!</span></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="price-details">
+                                    <span class="price">99,90</span>
+                                    <p>Sem Franquia</p>
+                                </div>
+                                <ul class="features">
+                                    <li><i></i><span><h3 class="centro">💨 Quer velocidade? Entendi! Este plano é uma escolha fantástica para casas com muitos dispositivos conectados, jogadores online ávidos e aficionados por streaming de alta definição.</h3></span></li>
+                                    <li><i></i><span><h3>NOSSOS BENEFÍCIOS</h3></span></li>
+                                    <li><i></i><span>⤷ Atendimento especializado</span></li>
+                                    <li><i></i><span>⤷ Suporte sem burocracia</span></li>
+                                    <li><i></i><span>⤷ 100% de Download</span></li>
+                                    <li><i></i><span>⤷ Sem limite de banda! Faça downloads ilimitados!</span></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="price-details">
+                                    <span class="price">139,90</span>
+                                    <p>Sem Franquia</p>
+                                </div>
+                                <ul class="features">
+                                    <li><i></i><span><h3 class="centro">💫 Para os verdadeiros entusiastas da internet, este é o plano que vai além das expectativas. Streaming em 4K, downloads instantâneos e jogos online sem atrasos - tudo isso e muito mais com velocidades incríveis e estabilidade.</h3></span></li>
+                                    <li><i></i><span><h3>NOSSOS BENEFÍCIOS</h3></span></li>        
+                                    <li><i></i><span>⤷ Atendimento especializado</span></li>
+                                    <li><i></i><span>⤷ Suporte sem burocracia</span></li>
+                                    <li><i></i><span>⤷ 100% de Download</span></li>
+                                    <li><i></i><span>⤷ Sem limite de banda! Faça downloads ilimitados!</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button>Contratar</button>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <br id="ancocontato">
+    <section class="contatos">
+        <main class="main-contato">
+            <div class="contatous">
+              <div class="titulo">
+                <h2>Contato</h2>
+              </div>
+              <div class="caixa">
+                  <div class="contato form">
+                      <h3>Deixe sua mensagem</h3>
+                      <form>
+                          <div class="formcaixa">
+                              <div class="row50">
+                                  <div class="inputcaixa">
+                                      <span>Nome</span>
+                                      <input type="text" placeholder="Lucas">
+                                  </div>
+                                  <div class="inputcaixa">
+                                      <span>Sobrenome</span>
+                                      <input type="text" placeholder="Carvalho">
+                                  </div>
+                              </div>
+                              <div class="row50">
+                                  <div class="inputcaixa">
+                                      <span>CPF</span>
+                                      <input type="text" placeholder="123.456.789-01">
+                                  </div>
+                                  <div class="inputcaixa">
+                                      <span>E-mail</span>
+                                      <input type="text" placeholder="exemplo@gmail.com">
+                                  </div>
+                              </div>
+                              <div class="row50">
+                                  <div class="inputcaixa">
+                                      <span>Telefone</span>
+                                      <input type="text" placeholder="(22) 12345-6789">
+                                  </div>
+                                  <div class="inputcaixa">
+                                      <span>Cidade</span>
+                                      <input type="text" placeholder="Casimiro de Abreu">
+                                  </div>
+                              </div>
+
+                              <div class="row100">
+                                  <div class="inputcaixa">
+                                      <span>Como podemos ajudar?</span>
+                                      <textarea placeholder="Sua Mensagem..."></textarea>
+                                  </div>
+                              </div>
+
+                              <div class="row100">
+                                  <div class="inputcaixa">
+                                      <input type="submit" value="Enviar">
+                                  </div>
+                              </div>
+
+                          </div>
+                      </form>
+                  </div>
+                  <div class="contato info">
+                      <h3>Informações de Contato</h3>
+                      <div class="infocaixa">
+                          <div>
+                              <span><ion-icon name="location"></ion-icon></span>
+                              <p>Rua Waldenir Heringer da Silva, 120 - Centro <br> Casimiro de Abreu | RJ</p>
+                          </div>
+                          <div>
+                              <span><ion-icon name="mail"></ion-icon></span>
+                              <a href="mailto:atendimento@entornet.com.br">atendimento@entornet.com.br</a>
+                          </div>
+                          <div>
+                              <span><ion-icon name="call"></ion-icon></span>
+                              <a href="tel:+552227781113">(22) 2778-1113</a>
+                          </div>
+                          <ul class="sci">
+                              <li><a href="https://www.facebook.com/entornetbandalarga/?locale=pt_BR"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                              <li><a href="https://www.instagram.com/entornetbandalarga/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                              <li><a href="https://wa.me/2227781113"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="contato mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.622938451883!2d-42.204578088308054!3d-22.48079952270203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x97bd06d3dca813%3A0x8d77b9ec0372c80a!2sEntornet%20Banda%20Larga!5e0!3m2!1spt-BR!2sbr!4v1716319469863!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+              </div>
+            </div>
+          </main>
+    </section>
+
+    <footer id="rodasobre">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Sobre Nós</h3>
+                <p>Entornet Banda Larga é um provedor de internet estabelecido desde 2004, reconhecido por ser pioneiro em serviços de conexão de alta qualidade. Homologado pela ANATEL, a Entornet se destaca pelo excelente atendimento técnico e pela rapidez no suporte ao cliente, garantindo uma experiência confiável e eficiente para seus usuários.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#">inicio</a></li>
+                    <li><a href="#">Planos</a></li>
+                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#">Teste de velocidade</a></li>
+                    <li><a href="#">Central do assinante</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contrate pelo Telefone</h3>
+                <p>(22) 2778-1113</p>
+                <br>
+                <p>Entornet comércio e serviços Ltda</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Entornet banda larga - Provedor de Internet © 2004 - 2024. Todos os Direitos Reservados.</p>
+        </div>
+    </footer>
+
+    <div id="chatbot">
+        <div id="depheader">
+            <h3>entornet banda larga</h3>
+        </div>
+        <div id="chatArea">
+            <div class="message botMessage">Como posso ajudar?</div>
+            <button class="optionButton" onclick="contratarServicos()">Contratar Serviços</button>
+            <button class="optionButton" onclick="alterarPlano()">Alterar Plano</button>
+            <button class="optionButton" onclick="falarAtendente()">Falar com Atendente</button>
+        </div>
+        <div id="barrachat">
+            <span class="marca">© Entornet banda larga - Todos os Direitos Reservados.</span>
+        </div>
+    </div>
+    
+    <div id="chatbotIcon" onclick="toggleChat()">
+        <img src="logo/entorlogo.png" alt="">
+        <h3 class="fluter">Chat</h2>
+
+    </div>
+    
+
+ </header>
+    <script src="planossub.js"></script>
+    <script src="slide.js"></script>
+    <script src="mobile-navbar.js"></script>
+    <script src="scroll.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="chatbot.js"></script>
+
+</body>
+</html>
