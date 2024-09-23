@@ -637,7 +637,7 @@
     }
   
     .row .features li {
-      font-size: 15px;
+      font-size: 13px;
     }
   
     .wrapper button {
@@ -728,8 +728,8 @@
     }
 
     .centro {
-      margin-bottom: 10%;
-      font-size: 16px;
+      font-size: 14px;
+      margin-right: 14px;
     }
 
     .wrapper {
@@ -745,7 +745,8 @@
     }
 
     .features li span {
-      font-size: 15px;
+      font-size: 12px;
+      padding: 3px;
     }
 
     .side-menu {
