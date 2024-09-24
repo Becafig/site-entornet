@@ -233,6 +233,7 @@
   .mobile-menu {
     display: none;
     cursor: pointer;
+    z-index: 900;
   }
   
   .mobile-menu div {
