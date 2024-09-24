@@ -118,14 +118,14 @@
 
     .nav-list {
       position: absolute;
-      top: 8vh;
+      top: 9vh;
       right: 0;
       width: 50vw;
       height: calc(100vh - 8vh);
       background: rgba(0, 0, 0, 0.486);
       flex-direction: column;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-evenly;
       transform: translateX(100%);
       transition: transform 0.3s ease-in;
     }
@@ -448,7 +448,7 @@
     }
   
     .nav-list {
-      top: 8vh;
+      top: 9vh;
       right: 0;
       width: 50vw;
       height: calc(70vh - 8vh);
@@ -664,7 +664,7 @@
 
     .nav-list {
       width: 60vw;
-      height: calc(100vh - 8vh);
+      height: calc(120vh - 8vh);
     }
   
   }
@@ -734,7 +734,7 @@
 
     .wrapper {
       width: 100%;
-      height: 80%;
+      height: 85%;
       left: 48.5%;
       top: 5%;
       transform: translateX(-50%);
@@ -828,9 +828,10 @@
       font-weight: 700;
       margin-bottom: 14px;
       background-color: #000264;
-      width: 305px;
+      width: 310px;
       border-radius: 30px;
       padding: 5px;
     }
 
   }
+
