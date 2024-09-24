@@ -262,57 +262,58 @@
                 <h2>Contato</h2>
               </div>
               <div class="caixa">
-                  <div class="contato form">
-                      <h3>Deixe sua mensagem</h3>
-                      <form>
-                          <div class="formcaixa">
-                              <div class="row50">
-                                  <div class="inputcaixa">
-                                      <span>Nome</span>
-                                      <input type="text" placeholder="Lucas">
-                                  </div>
-                                  <div class="inputcaixa">
-                                      <span>Sobrenome</span>
-                                      <input type="text" placeholder="Carvalho">
-                                  </div>
-                              </div>
-                              <div class="row50">
-                                  <div class="inputcaixa">
-                                      <span>CPF</span>
-                                      <input type="text" placeholder="123.456.789-01">
-                                  </div>
-                                  <div class="inputcaixa">
-                                      <span>E-mail</span>
-                                      <input type="text" placeholder="exemplo@gmail.com">
-                                  </div>
-                              </div>
-                              <div class="row50">
-                                  <div class="inputcaixa">
-                                      <span>Telefone</span>
-                                      <input type="text" placeholder="(22) 12345-6789">
-                                  </div>
-                                  <div class="inputcaixa">
-                                      <span>Cidade</span>
-                                      <input type="text" placeholder="Casimiro de Abreu">
-                                  </div>
-                              </div>
-
-                              <div class="row100">
-                                  <div class="inputcaixa">
-                                      <span>Como podemos ajudar?</span>
-                                      <textarea placeholder="Sua Mensagem..."></textarea>
-                                  </div>
-                              </div>
-
-                              <div class="row100">
-                                  <div class="inputcaixa">
-                                      <input type="submit" value="Enviar">
-                                  </div>
-                              </div>
-
-                          </div>
-                      </form>
-                  </div>
+                <div class="contato form">
+                  <h3>Deixe sua mensagem</h3>
+                  <form id="contactForm">
+                    <div class="formcaixa">
+                      <div class="row50">
+                        <div class="inputcaixa">
+                          <span>Nome</span>
+                          <input type="text" id="nome" placeholder="Lucas" required>
+                        </div>
+                        <div class="inputcaixa">
+                          <span>Sobrenome</span>
+                          <input type="text" id="sobrenome" placeholder="Carvalho" required>
+                        </div>
+                      </div>
+                      <div class="row50">
+                        <div class="inputcaixa">
+                          <span>CPF</span>
+                          <input type="text" id="cpf" placeholder="123.456.789-01" required>
+                        </div>
+                        <div class="inputcaixa">
+                          <span>E-mail</span>
+                          <input type="email" id="email" placeholder="exemplo@gmail.com" required>
+                        </div>
+                      </div>
+                      <div class="row50">
+                        <div class="inputcaixa">
+                          <span>Telefone</span>
+                          <input type="text" id="telefone" placeholder="(22) 12345-6789" required>
+                        </div>
+                        <div class="inputcaixa">
+                          <span>Cidade</span>
+                          <input type="text" id="cidade" placeholder="Casimiro de Abreu" required>
+                        </div>
+                      </div>
+              
+                      <div class="row100">
+                        <div class="inputcaixa">
+                          <span>Como podemos ajudar?</span>
+                          <textarea id="mensagem" placeholder="Sua Mensagem..." required></textarea>
+                        </div>
+                      </div>
+              
+                      <div class="row100">
+                        <div class="inputcaixa">
+                          <input type="submit" value="Enviar">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              
                   <div class="contato info">
                       <h3>Informações de Contato</h3>
                       <div class="infocaixa">
@@ -397,6 +398,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="chatbot.js"></script>
     <script src="dev.js"></script>
+    <script src="email.js"></script>
 
 </body>
 </html>
