@@ -605,10 +605,11 @@
     footer {
       bottom: -14%;
     }
-
+  
     .footer-bottom {
       font-size: 12px;
     }
+
   }
 
 
@@ -641,6 +642,9 @@
     .thumbnail .item {
       width: 120px;
       height: 90px;
+    }
+    .footer-bottom {
+      font-size: 11px;
     }
 
   }
@@ -713,6 +717,10 @@
       height: 50vh;
     }
 
+    .footer-bottom {
+      font-size: 10px;
+    }
+
   }
 
   @media (max-width: 450px) {
@@ -765,3 +773,4 @@
     }
 
   }
+  
