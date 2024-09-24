@@ -118,7 +118,6 @@
 
     .nav-list {
       position: absolute;
-      top: 9vh;
       right: 0;
       width: 50vw;
       height: calc(100vh - 8vh);
@@ -376,8 +375,6 @@
       width: 50%;
     }
   
-
-  
     .header-2 {
       padding: 1px;
       background-color: #ffffff;
@@ -448,7 +445,6 @@
     }
   
     .nav-list {
-      top: 9vh;
       right: 0;
       width: 50vw;
       height: calc(70vh - 8vh);
