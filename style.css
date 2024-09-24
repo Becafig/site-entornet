@@ -1276,3 +1276,18 @@ footer {
   align-self: flex-start;
   margin-left: 15px;
 }
+
+#dev {
+  text-decoration: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #fffd7cfa;
+  font-weight: 700;
+  animation: blink-caret 0.7s step-end infinite; 
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#dev:hover {
+  font-weight: 800;
+  font-size: 18px;
+}
