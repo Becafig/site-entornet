@@ -127,6 +127,7 @@
       justify-content: space-evenly;
       transform: translateX(100%);
       transition: transform 0.3s ease-in;
+      top: 0vh;
     }
     .nav-list li {
       margin-left: 0;
@@ -659,6 +660,7 @@
     }
 
     .nav-list {
+      top: 0vh;
       width: 60vw;
       height: calc(120vh - 8vh);
     }
