@@ -121,7 +121,7 @@
         top: 0vh;
         right: 0;
         width: 50vw;
-        height: calc(100vh - 8vh);
+        height: 100vh;
         background: rgba(0, 0, 0, 0.486);
         flex-direction: column;
         align-items: center;
