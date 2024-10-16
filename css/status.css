@@ -9,11 +9,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: url('/site-entornet/logo/logoentorback.jpg'); 
-    background-size: 900px; 
-    background-attachment: fixed; 
-    background-position: center; 
-    background-repeat: no-repeat;
 }
 section {
     width: 100%;
