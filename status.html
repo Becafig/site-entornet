@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/status.css">
+    <link rel="stylesheet" href="css/mobiles.css">
+</head>
+<body class="black">
+    <header class="black">
+        <section class="ocultar">
+            <nav id="navbar">
+                <div id="navbranco">
+                    <ul class="cardbranco">
+                        <div class="tel-bole">
+                            <a href="http://ispadmin.entornet.com.br/prod/src/central/central.php?dest=segundavia.html">2° via do Boleto</a>
+                            <a href="tel:+552227781113">Tel:  (22) 2778-1113</a>
+                        </div>
+                        <div class="redesocial">
+                            <div class="basebtn">
+                                <input type="checkbox" id="mododark" class="s-btn" title="Modo Dark">
+                                <label for="mododark" class="btn-label"></label>
+                            </div>
+                            <a href="https://www.instagram.com/entornetbandalarga/" target="_blank"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></a>
+                            <a href="https://www.facebook.com/entornetbandalarga/?locale=pt_BR" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABUElEQVR4nO2ZzUrDQBDH82S7Vby1JTsoPpAieFBv0qMP4UyEQq03L4KWWh/Am4eASXupYEeiWL9o6W5jdgPzgzku+f/2m00UCYIgBE3DYKwArxTgRANxFaUAJwqor+KkvVZ4beiwqtB6URk8cO557+HhU4Ja1gLFtAlI4NJewODYe3CYV24tEEBo/l4ioEvoxc2dhI86Q767TznLpzyb8Q+CHoGN7YSvb554GTpkgePOcGn44AUGo5RrLZCPX/4E3ju55a3di5Xaexd4/b1imd/XxartvQvYThktAvA/vb6I52wa3gjYMBil9RY47z7WW+D07CE8AdmFQEaAZAppOYlJdiGWbRTkNspyEuu6XSVUyU+L6wlgZi8A1C/7QudcBnv2AnHS9h4cPqoB2IxcKH4u+A6vgPadwn9JUKt4n6/yuV0V3zLYc+55QRCEqCreAAESa+zxbT1rAAAAAElFTkSuQmCC"></a>
+                            <a href="https://wa.me/2227781113" target="_blank"><img src="data:image/png;base64,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"></a>  
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+    
+            <nav id="navpreto">
+                <div class="logo-container">
+                    <a href="" class="logo-link">
+                      <img src="/login/entorlogo.png" alt="Entornet Banda Larga Logo" class="logo-img">
+                      <span class="logo-text"><h1>entornet banda larga</h1></span>
+                    </a>
+                  </div>
+                  <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                  </div>
+                  <ul class="nav-list">
+                    <li><a href="entornet.html" class="active"><h2>Inicio</h2></a></li>
+                    <li><a href="entornet.html#sobrenós" id="sobre"><h2>Sobre</h2></a></li>
+                    <li><a href="entornet.html#planos" id="nav-planos"><h2>Planos</h2></a></li>
+                    <li><a href="entornet.html#contato"><h2>Contato</h2></a></li>
+                    <li><a href="http://ispadmin.entornet.com.br/prod/src/central/logincentral.php" class="button-nav"><h2>Central do assinante</h2></a></li>
+                  </ul>
+            </nav>
+        </section>
+        
+        <div>
+            <div class="backgroud-fundo">
+                    <h1>
+                        Status do serviço
+                    </h1>
+            </div>
+        </div>
+
+        <section class="ocultar2">
+            <div id="cardstatus" class="black">
+                <div class="cabeça black"><h3 class="titulo"></h3></div>
+                <div class="subtitulo previsão"></div>
+                <div class="time atualização"></div>
+                <hr class="separator">
+                <div class="status-section descrição" id="content">
+                    <textarea class="status-text black" rows="4" cols="50" readonly></textarea>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div id="traço"></div>
+            <div class="faq-container black">
+                <h1>Duvidas?</h1>
+        
+                <div id="comercial" class="tab-content active">
+                    <ul class="faq-list">
+                        <li>
+                            <h3 onclick="toggleAnswer(this)">O que é ataque DDoS? (Distributed Denial of Service)<img width="22" height="22" src="https://img.icons8.com/ios-glyphs/30/expand-arrow--v1.png" alt="expand-arrow--v1"/></h3>
+                            <div class="answer">
+                                <p>Iremos lhe informa de forma simples e objetiva sobre os ataques DDoS.</p>
+                                <ul>
+                                    <li>Um ataque DDoS (Distributed Denial of Service) é uma tentativa maliciosa de sobrecarregar um servidor, rede ou serviço, inundando-o com um grande volume de solicitações falsas vindas de várias fontes, geralmente uma rede de computadores infectados chamados de botnets.</li>
+                                    <li>No caso de provedores de internet, os ataques DDoS visam interromper os serviços de internet oferecidos aos clientes, causando lentidão ou indisponibilidade total da conexão. Isso pode resultar em interrupções no serviço, impactando tanto o provedor quanto seus usuários finais.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 onclick="toggleAnswer(this)">Por que minha internet cai durante os ataques?<img width="22" height="22" src="https://img.icons8.com/ios-glyphs/30/expand-arrow--v1.png" alt="expand-arrow--v1"/></h3>
+                            <div class="answer">
+                                <p>Durante um ataque DDoS, sua internet pode cair porque o provedor de internet está sendo sobrecarregado por um grande volume de tráfego malicioso, muito além do que seus servidores conseguem processar. Isso congestiona a rede, limitando a capacidade do provedor de entregar a conexão normalmente aos usuários. Como resultado, você pode enfrentar lentidão, quedas constantes ou até a completa interrupção do serviço, já que o sistema do provedor não consegue atender a todas as solicitações legítimas enquanto lida com o ataque.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 onclick="toggleAnswer(this)">Todos os provedores são afetados por esses ataques?<img width="22" height="22" src="https://img.icons8.com/ios-glyphs/30/expand-arrow--v1.png" alt="expand-arrow--v1"/></h3>
+                            <div class="answer">
+                                <p>Sim, todos os provedores de internet estão sujeitos a sofrer ataques DDoS. Esses ataques visam sobrecarregar a rede e causar interrupções no serviço, podendo atingir qualquer provedor, independentemente do seu tamanho. No entanto, provedores com grande capacidade e infraestrutura robusta são frequentemente alvo desses criminosos por oferecerem uma rede mais extensa e abrangente. Eles enxergam provedores maiores como alvos, justamente pela alta capacidade de link. Mesmo assim, continuamos trabalhando arduamente para que os ataques sejam bloqueados o mais rápido possível.</p>
+                            </div>
+                        </li>
+                        <!-- Mais perguntas aqui -->
+                    </ul>
+                </div>
+        
+        
+                <p class="contact-link">Ainda com dúvidas? <a href="#">Entre em contato</a></p>
+            </div>
+        </section>
+
+
+        <footer id="sobrenós">
+            <div class="base-footer">
+                <div class="seção-contato">
+                    <h3 title="Sobre Nós">Sobre Nós</h3>
+                    <p title="Entornet Banda Larga">Entornet Banda Larga é um provedor de internet estabelecido desde 2004, reconhecido por ser pioneiro em serviços de conexão de alta qualidade. Homologado pela ANATEL, a Entornet se destaca pelo excelente atendimento técnico e pela rapidez no suporte ao cliente, garantindo uma experiência confiável e eficiente para seus usuários.</p>
+                </div>
+                <div class="seção-contato">
+                    <h3 title="Links">Links Úteis</h3>
+                    <ul>
+                        <li><a href="#sobre" title="Sobre">Sobre</a></li>
+                        <li><a href="#planos" title="Planos">Planos</a></li>
+                        <li><a href="#contato" title="Contato">Contato</a></li>
+                        <li><a href="https://fast.com/pt/" target="_blank" title="Teste de velocidade">Teste de velocidade</a></li>
+                        <li><a href="http://ispadmin.entornet.com.br/prod/src/central/logincentral.php" target="_blank" title="Central do assinante">Central do assinante</a></li>
+                    </ul>
+                </div>
+                <div class="seção-contato" title="Contato">
+                    <h3 title="Contrate pelo Telefone">Contrate pelo Telefone</h3>
+                    <p>Entornet comércio e serviços Ltda</p>
+                    <p>(22) 2778-1113</p>
+                    <a href="status.html">Status de Serviços</a>
+                </div>
+            </div>
+            <div class="copyright" title="Entornet banda larga - Provedor de Internet © 2004 - 2024. Todos os Direitos Reservados.">
+                <p>&copy; Entornet banda larga - Provedor de Internet © 2004 - 2024. Todos os Direitos Reservados. Desenvolvido por: <a href="https://becafig.github.io/portfolio/" target="_blank" id="dev"></a></p>
+        </footer>
+    
+        <div id="chatbot">
+            <div id="depheader">
+                <h3 title="Entornet Banda Larga">entornet banda larga</h3>
+            </div>
+            <div id="chatArea">
+                <div class="message botMessage">Como posso ajudar?</div>
+                <button class="optionButton" onclick="contratarServicos()" title="Contratar Serviços">Contratar Serviços</button>
+                <button class="optionButton" onclick="alterarPlano()" title="Alterar Plano">Alterar Plano</button>
+                <button class="optionButton" onclick="falarAtendente()" title="Falar com Atendente">Falar com Atendente</button>
+            </div>
+            <div id="barrachat">
+                <span class="marca" title="Entornet Banda Larga">© Entornet banda larga - Todos os Direitos Reservados.</span>
+            </div>
+        </div>
+        
+        <div id="chatbotIcon" onclick="toggleChat()">
+            <img src="logo/entorlogo.png" alt="">
+        </div>
+        
+    </header>
+    <script src="JavaScript/chatbot.js"></script>
+    <script type="module" src="JavaScript/status.js"></script>
+    <script src="JavaScript/javaS.js"></script>
+    <script src="JavaScript/pag2.js"></script>
+
+</body>
+</html>

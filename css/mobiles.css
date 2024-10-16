@@ -1,0 +1,772 @@
+@media (max-width: 1010px) {
+    .contatous {
+      padding: 0;
+    }
+  
+    .thumbnail .item{
+      width: 140px;
+      height: 180px;
+      flex-shrink: 0;
+      position: relative;
+      box-shadow: 70px #000000;
+    }
+
+    .contatos {
+      padding: 0px;
+    }
+
+    .contato {
+      padding: 20px;
+    }
+
+  }
+
+@media (max-width: 980px) {
+
+  .h1-planos {
+    display: none;
+  }
+
+  #menuButton {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: -14px;
+    font-size: 24px;
+    background-color: #0003a5;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 45%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    z-index: 2000;
+  }
+
+  .ofertas {
+    display: none;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 85%;
+    left: 48.5%;
+    top: 2%;
+    transform: translateX(-50%);
+  }
+
+  .ofertas {
+    display: flex;
+  }
+
+  .nto.open {
+    right: 0;
+  }
+
+  .button-nav {
+    background-color: blue;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+  }
+
+  .button-nav:hover {
+    color: #1b01ad;
+    background-color: #fffb00;
+  }
+
+  #menuButton {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: -14px;
+    font-size: 24px;
+    background-color: #0003a5;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 45%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    z-index: 2000;
+  }
+
+  .side-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    height: 100%;
+    background-color: #ffffff00;
+    transition: right 0.3s ease;
+  }
+
+  .side-menu.open {
+    right: 0;
+    z-index: 6000;
+  }
+
+  .side-menu.close {
+    right: -100%;
+  }
+
+  .thumbnail .item {
+    width: 140px;
+    height: 110px;
+}
+
+}
+
+@media (max-width: 945px) {
+
+    .nav-list {
+    position: absolute;
+    top: 10.5vh;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.486);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    gap: 30px;
+    display: flex;
+    }
+
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+      margin-top: 20px;
+    }
+
+    .mobile-menu {
+      display: block;
+    }
+  
+    .nav-list.active {
+    transform: translateX(0);
+    }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+  
+  .button-nav {
+    background-color: blue;
+    width: 100%;
+    border-radius: 30px;
+    padding: 5px;
+  }
+  
+  .button-nav:hover {
+    color: #1b01ad;
+    background-color: #fffb00;
+  }
+  
+  .centro {
+    text-align: center;
+  }
+
+    .contatous {
+      padding: 0px;
+    }
+  
+    .caixa {
+      right: 0%;
+    }
+  
+    .formcaixa .row50 {
+      display: flex;
+      gap: 0;
+      flex-direction: column;
+    }
+  
+    .inputcaixa {
+      width: 100%;
+    }
+  
+    .contato {
+      padding: 20px;
+      height: 950px;
+      width: 450px;
+    }
+  
+    .info {
+      width: 430px;
+      height: 467px;
+    }
+  
+    .mapa {
+      min-height: 300px;
+      width: 430px;
+      height: 467px;
+      padding: 0;
+      margin-top: -12.5%;
+    }
+  
+    .h3-planos {
+      top: 59%;
+      left: 42%;
+    }
+  
+    .header {
+      min-height: 170%;
+    }
+  
+    .cards {
+      margin-top: 36px;
+    }
+    
+}  
+
+
+@media screen and (max-width: 900px) {
+
+    h1 {
+      font-size: 3.5rem;
+    }
+  
+    .selecionarmenu {
+      right: 17%;
+    }
+  
+    .contatos {
+      height: 1900px;
+    }
+  
+    .caixa {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+      "form"
+      "info"
+      "mapa";
+    }
+  
+    .cards {
+      margin-top: 36px;
+      width: 100%;
+      gap: 15px;
+    }
+  
+    .card {
+      height: 250px;
+      width: 220px;
+    }
+  
+    .h3-planos {
+      top: 66%;
+      left: 44%;
+    }
+  
+    .contatous {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        height: 950px;
+        width: 100%;
+        top: 1%;
+    }
+  
+    .mapa {
+      height: auto;
+      margin-top: 1%;
+      min-height: 300px;
+    }
+  
+    .info {
+      height: auto;
+      min-height: 300px;
+    }
+  
+  }
+
+
+@media screen and (max-width: 768px) {
+  
+    h1 {
+      right: 20%;
+    }
+  
+    .wrapper button {
+      top: 85%;
+    }
+  
+    .card {
+      height: 285px;
+      width: 205px;
+      padding: 1% 2%;
+    }
+  
+    header label .h2 {
+      font-size: 14px;
+    }
+    
+  }
+
+
+  @media (max-width: 740px) {
+
+    .tel-bole {
+      display: none;
+    }
+
+    .ofertas {
+      display: none;
+    }
+  
+    .ofertas {
+      display: flex;
+    }
+  
+    .wrapper button {
+      top: 84%;
+    }
+  
+    #tab-1:checked ~ .card-area .cards-planos .row-1 {
+      margin-left: 0%;
+      width: 49%;
+      min-width: 200px;
+      max-width: 100%;
+      z-index: 2000;
+    }
+  
+    .card-area {
+      height: 100%;
+    }
+  
+    #tab-1:checked ~ header .slider-2 {
+      left: 4.2%;
+    }
+  
+    #tab-2:checked ~ header .slider-2 {
+      left: 40%;
+    }
+  
+    #tab-3:checked ~ header .slider-2 {
+      left: 75.2%;
+    }
+  
+    #tab-4:checked ~ header .slider-2 {
+      left: 92.5%;
+    }
+  
+    .cards-planos {
+      width: 50%;
+    }
+  
+
+  
+    .header-2 {
+      padding: 1px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ccc;
+      z-index: 2000;
+    }
+  
+    .card-area {
+      padding: 0px;
+    }
+  
+    .cards-planos .row {
+      margin-bottom: 0px;
+    }
+  
+    .areadevenda {
+      list-style: none;
+      padding: 0;
+    }
+  
+    .areadevenda li {
+      margin-bottom: 10px;
+    }
+  
+    .cardbranco a {
+      right: 0%;
+      position: relative;
+    }
+  
+    div span {
+      font-size: 13px;
+      font-weight: 600;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+  
+    .redesocial {
+      gap: 1%;
+      display: flex;
+    }
+  
+    .serviços h1 {
+      top: 0%;
+      right: 0%;
+    }
+  
+    header label {
+      padding: 0 10px;
+    }
+  
+    body {
+      overflow-x: hidden;
+    }
+  
+  
+    .nav-list.active {
+      transform: translateX(0);
+    }
+  
+    @keyframes navLinkFade {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  
+    .mobile-menu.active .line1 {
+      transform: rotate(-45deg) translate(-8px, 8px);
+    }
+  
+    .mobile-menu.active .line2 {
+      opacity: 0;
+    }
+  
+    .mobile-menu.active .line3 {
+      transform: rotate(45deg) translate(-5px, -7px);
+    }
+  
+    .button-nav {
+      background-color: blue;
+      border-radius: 30px;
+      padding: 10px;
+      display: flex;
+    }
+  
+    .centro {
+      text-align: center;
+    }
+  
+    #tab-1:checked ~ header .slider-2 {
+      left: 0.5%;
+      width: 25%;
+      transform: translateX(1%);
+    }
+  
+    #tab-2:checked ~ header .slider-2 {
+      left: 38.5%;
+      width: 25%;
+      transform: translateX(-55%);
+    }
+  
+    #tab-3:checked ~ header .slider-2 {
+      left: 77%;
+      width: 25%;
+      transform: translateX(-115%);
+    }
+  
+    #tab-4:checked ~ header .slider-2 {
+      left: 100%;
+      width: 23%;
+      transform: translateX(-105%);
+    }
+  
+    footer {
+      bottom: -12%;
+    }
+
+    .thumbnail .item {
+      width: 140px;
+      height: 110px;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 635px) {
+
+
+    body {
+      background-size: 500px; 
+    }
+
+    .tel-bole {
+      display: none;
+    }
+
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    span {
+      font-size: 13px;
+      font-weight: 600;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+  
+    .redesocial {
+      gap: 5px;
+    }
+  
+    nav {
+      top: 3.9%;
+    }
+  
+    .slider .list .item .content {
+      padding-right: 0;
+    }
+  
+    .slider .list .item .content .titulo {
+      font-size: 50px;
+    }
+  
+    header label .h2{
+      font-size: 11px;
+    }
+  
+    .wrapper header {
+      border-radius: 3cm;
+    }
+  
+    .row .preço-destalhes {
+      padding-bottom: 15px;
+    }
+  
+    .preço-destalhes .preço::before {
+      left: -20px;
+      top: 10px;
+      font-size: 12px;
+    }
+  
+    .preço-destalhes .preço::after {
+      right: -25px;
+      bottom: 10px;
+      font-size: 10px;
+    }
+  
+    .preço-destalhes p {
+      font-size: 18px;
+    }
+  
+    .preço-destalhes .preço {
+      font-size: 40px;
+    }
+  
+    .row .areadevenda li {
+      font-size: 13px;
+    }
+  
+    .wrapper button {
+      height: 40px;
+      font-size: 18px;
+      margin-top: 15%;
+    }
+  
+    #tab-1:checked ~ .card-area .cards-planos .row-1 {
+      margin-left: -0%;
+      width: 49%;
+      min-width: 280px;
+      max-width: 100%;
+    }
+  
+    .logo-img {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    footer {
+      bottom: -14%;
+    }
+  
+    .copyright {
+      font-size: 13px;
+    }
+
+  }
+
+
+  @media screen and (max-width: 600px) {
+    #chatbot {
+        width: 90%;
+        right: 5%;
+        bottom: 60px;
+        height: 70%;
+    }
+
+    #chatbotIcon {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .optionButton {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .slider {
+      height: 60vh;
+    }
+    .beneficios {
+      padding: 0px;
+    }
+
+    .thumbnail .item {
+      width: 120px;
+      height: 90px;
+    }
+    .copyright {
+      font-size: 12px;
+    }
+
+  }
+
+
+
+  @media (max-width: 530px) {
+
+    .card p {
+      margin: 10px 0;
+    }
+
+    .card i {
+      color: aqua;
+      margin-top: 7px;
+      margin-bottom: 7px;
+      font-size: 35px;
+    }
+
+    .card {
+      width: 180px;
+    }
+
+    .contato {
+      padding: 20px;
+      width: 390px
+    }
+
+    .centro {
+      font-size: 14px;
+      margin-right: 14px;
+    }
+
+    .wrapper {
+      width: 100%;
+      height: 85%;
+      left: 48.5%;
+      top: 2%;
+      transform: translateX(-50%);
+    }
+
+    header label .h2 {
+      font-size: 10px;
+    }
+
+    .areadevenda li span {
+      font-size: 12px;
+      padding: 3px;
+    }
+
+    .side-menu {
+      width: 85%;
+    }
+
+    .h3-planos {
+      display: none;
+    }
+
+    .thumbnail .item {
+      width: 90px;
+      height: 90px;
+    }
+
+    .thumbnail .item {
+      width: 12vh;
+      height: 9vh;
+    }
+
+    .slider {
+      height: 50vh;
+    }
+
+    .copyright {
+      font-size: 11px;
+    }
+
+  }
+
+  @media (max-width: 450px) {
+
+    .redesocial {
+      gap: 0;
+    }
+
+    .cardbranco {
+      gap: 0px;
+    }
+
+    .contato {
+      padding: 10px;
+      width: 370px
+    }
+
+    .cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+      height: 280px;
+      width: 300px;
+    }
+
+    .seção-contato {
+      flex: 1;
+      padding: 0;
+    }
+
+    .thumbnail .item {
+      width: 10vh;
+      height: 8vh;
+    }
+
+    .marca {
+      font-size: 11px;
+      color: #bdbdbd;
+      font-weight: 700;
+      margin-bottom: 14px;
+      background-color: #000264;
+      width: 310px;
+      border-radius: 30px;
+      padding: 5px;
+    }
+
+  }
+  

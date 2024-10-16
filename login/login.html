@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <header>
+        <section id="login">
+            <form id="login-form">
+                <h3>Admin</h3>
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Senha">
+                <button type="submit">Login</button>
+                <p id="login-error" style="color:red; display:none;">Email ou senha inválidos</p>
+            </form>
+        </section>
+
+        <section class="navegadores" style="display: none;">
+            <nav id="navpreto">
+                <div class="logo-container">
+                    <a href="" class="logo-link">
+                      <img src="entorlogo.png" alt="Entornet Banda Larga Logo" class="logo-img">
+                      <span class="logo-text"><h1>Administração</h1></span>
+                    </a>
+                </div>
+            </nav>
+        </section>
+        <section class="menu-lateral" style="display: none;">
+            <div class="lateral">
+                <ul>
+                    <li><a href="#" id="status">Edição Status</a></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="card" id="card">
+                <div class="editor">
+                    <ul>
+                        <h3>Titulo</h3>
+                        <textarea name="" id="titulo"></textarea>
+                        <h3>Previsão</h3>
+                        <textarea name="" id="prev"></textarea>
+                        <h3>Atualização</h3>
+                        <textarea name="" id="atua"></textarea>
+                        <h3>Descrição</h3>
+                        <textarea name="" id="desc"></textarea>
+                    </ul>
+                </div>
+                <button id="salvar"><a href="#">editar</a></button>
+            </div>
+        </section>
+    </header>
+    <script type="module" src="login.js"></script>
+</body>
+</html>

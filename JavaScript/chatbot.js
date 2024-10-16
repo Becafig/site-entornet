@@ -1,3 +1,7 @@
+/*        chat bot       */
+
+
+
 let isChatVisible = false;
 
 function toggleChat() {
@@ -68,9 +72,7 @@ function falarAtendente() {
     addMessage("Falar com Atendente", false);
     setTimeout(() => {
         addMessage("Iremos redirecionar você para nosso WhatsApp.");
-        setTimeout(() => {
-            window.open('https://wa.me/5551999999999', '_blank');
-        }, 10000);
+        startCountdown();
     }, 500);
 }
 
@@ -121,16 +123,18 @@ function startCountdown() {
 
         if (countdown === 0) {
             clearInterval(interval);
+            window.location.href = 'https://wa.me/2227781113';
 
-           
             const manualButton = document.createElement('button');
             manualButton.innerText = 'Redirecionar Manualmente';
             manualButton.className = 'manualRedirectButton';
             manualButton.onclick = () => {
-                window.open('https://wa.me/5551999999999', '_blank');
+                window.location.href = 'https://wa.me/2227781113';
             };
             chatArea.appendChild(manualButton);
             chatArea.scrollTop = chatArea.scrollHeight;
         }
     }, 1000);
 }
+
+
