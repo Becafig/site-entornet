@@ -9,7 +9,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-image: url('logo/logoentorback.jpg'); 
+        background-image: url('/site-entornetlogo/logoentorback.jpg'); 
         background-size: 900px; 
         background-attachment: fixed; 
         background-position: center; 
@@ -26,8 +26,8 @@
 
     @font-face {
         font-family: 'omicron'; 
-        src: url('/font/Omicron.ttf') format('woff2'), 
-             url('/font/Omicron.ttf') format('woff'); 
+        src: url('/site-entornet/font/Omicron.ttf') format('woff2'), 
+             url('/site-entornet/font/Omicron.ttf') format('woff'); 
     }
     
 /*                   NAV BRANCO                                    */
