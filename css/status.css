@@ -1,4 +1,4 @@
-*{
+n*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -36,8 +36,8 @@ header {
 }
 @font-face {
     font-family: 'Omicron'; 
-       src: url('/font/Omicron.ttf') format('woff2'), 
-             url('/font/Omicron.ttf') format('woff'); 
+       src: url('site-entornet/font/Omicron.ttf') format('woff2'), 
+             url('site-entornet/font/Omicron.ttf') format('woff'); 
 }
 .navegadores {
     width: 100%;
