@@ -246,7 +246,7 @@ header {
 .backgroud-fundo {
   width: 100%;
   height: 350px;
-  background-image: url("/image/tec.jpg");
+  background-image: url("/site-entornet/image/tec.jpg");
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
