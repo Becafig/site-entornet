@@ -633,7 +633,7 @@
     }
 
     .slider {
-      height: 60vh;
+      height: 55vh;
     }
     .beneficios {
       padding: 0px;
@@ -724,6 +724,11 @@
   }
 
   @media (max-width: 450px) {
+
+    
+    .slider {
+      height: 45vh;
+    }
 
     .redesocial {
       gap: 0;
